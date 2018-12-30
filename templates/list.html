@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+
+  {% block content %}
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+    <h1 style="font-family:auto; font-style:italic; color: white;">ARTICLES</h1>
+  </center>
+  {% for a in articles %}
+    <div class="article">
+      <img src="{{a.thumb.url}}" alt="NO IMAGE AVAILABLE" height="150px" width="294px"/>
+      <h5 style="margin: 5px;"><a href="{% url 'article:detail' slug=a.slug %}" style="text-decoration:none;">{{a.title}}</a></h5>
+      <p>{{a.snippet}}</p>
+      <p>{{a.date}}</p>
+    </div>
+  {% endfor %}
+
+{% endblock %}

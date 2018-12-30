@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      #v{
+        height: 300px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div id="v">
+        <form id="f">
+          <br>
+          <input type="email" placeholder="Enter email" value="" name="Email" class="form-control form-group" id="a">
+          <br>
+          <input type="password" placeholder="Password" value="" name="password" class="form-control form-group">
+          <br>
+          <center>
+            <button type="button" class="btn btn-primary btn-sm form-group" id="b">
+              Log in
+            </button>
+          </center>
+          <br>
+        </form>
+        <script>
+          document.getElementById("b").addEventListener("click", function(){alert("Welcome");});
+        </script>
+      </div>
+   </center>
+
+  </body>
+</html>
